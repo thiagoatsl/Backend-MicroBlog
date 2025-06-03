@@ -15,9 +15,7 @@ body {
 }
 
 .containerPrincipal {
-    width: 100%; /* Garante que o container ocupe toda a largura disponível */
-    /* max-width: 1200px; /* REMOVIDO OU COMENTADO para layout de largura total */
-    /* margin: 0 auto; /* REMOVIDO OU COMENTADO para layout de largura total */
+    width: 100%; 
 }
 
 /* --- Cabeçalho Principal --- */
@@ -44,20 +42,20 @@ body {
     padding: 5px 10px;
 }
 
-.icone-pesquisa { /* Para o SVG ou <img> do ícone de pesquisa */
+.icone-pesquisa { /* Para o SVG do ícone de pesquisa */
     width: 18px;
     height: 18px;
     margin-right: 8px;
-    color: #888; /* Cor do ícone (para SVG inline) */
-    stroke: #888; /* Cor da linha do ícone (para SVG inline) */
+    color: #888; 
+    stroke: #888; 
 }
 
 .areaPesquisa input[type="search"] {
-    padding: 8px 0; /* Ajustado */
+    padding: 8px 0;
     border: none;
     background-color: transparent;
     color: #e0e0e0;
-    width: 220px; /* Ajustado */
+    width: 220px; 
 }
 
 .areaPesquisa input[type="search"]::placeholder {
@@ -71,7 +69,6 @@ body {
 
 .areaPesquisa input[type="search"]:focus {
     outline: none;
-    /* A borda e sombra agora estão no container .areaPesquisa quando o input tem foco */
 }
 
 
@@ -79,7 +76,7 @@ body {
 .corpoPagina {
     display: flex;
     margin-top: 10px;
-    padding: 0 10px; /* Adiciona um pequeno padding lateral para o conteúdo não colar nas bordas em full-width */
+    padding: 0 10px; 
 }
 
 /* --- Menu Lateral --- */
@@ -88,7 +85,7 @@ body {
     padding: 20px;
     background-color: #1e1e1e;
     margin-right: 20px;
-    min-height: calc(100vh - 100px); /* Ajustado para considerar padding e altura do header */
+    min-height: calc(100vh - 100px); 
     border-radius: 8px;
 }
 
@@ -307,7 +304,7 @@ body {
 @media (max-width: 768px) {
     .corpoPagina {
         flex-direction: column;
-        padding: 0 5px; /* Menor padding em telas menores */
+        padding: 0 5px; 
     }
 
     .menuLateral {
@@ -315,55 +312,55 @@ body {
         width: 100%;
         margin-right: 0;
         margin-bottom: 10px;
-        border-radius: 8px; /* Mantendo bordas arredondadas ou pode remover se preferir */
-        min-height: auto; /* Ajusta altura para o conteúdo */
+        border-radius: 8px; 
+        min-height: auto; 
     }
 
     .conteudoFeed {
         width: 100%;
-        border-radius: 8px; /* Mantendo bordas arredondadas */
+        border-radius: 8px; 
     }
 
     .cabecalhoPrincipal {
-        padding: 10px 15px; /* Padding ligeiramente menor no header */
-        flex-wrap: wrap; /* Permite que os itens do header quebrem linha se necessário */
-        gap: 10px; /* Espaço se quebrar linha */
+        padding: 10px 15px; 
+        flex-wrap: wrap; 
+        gap: 10px; 
     }
     
     .cabecalhoPrincipal .logoContainer {
-        flex-grow: 1; /* Permite que o logo ocupe espaço */
+        flex-grow: 1; 
     }
 
     .areaPesquisa {
-        width: 100%; /* Ocupa mais largura em telas menores */
-        max-width: 350px; /* Limita um pouco para não ficar excessivamente grande */
-        margin: 0 auto; /* Centraliza se for menor que 100% da largura disponível */
+        width: 100%; 
+        max-width: 350px; 
+        margin: 0 auto; 
     }
 
     .areaPesquisa input[type="search"] {
-        width: calc(100% - 30px); /* Ajusta a largura do input considerando o ícone e padding */
+        width: calc(100% - 30px); 
     }
 }
 
 @media (max-width: 480px) {
     .corpoPagina {
-        padding: 0; /* Sem padding lateral no corpo da página em telas muito pequenas */
+        padding: 0; 
     }
 
     .menuLateral, .conteudoFeed, .cabecalhoPrincipal {
-        border-radius: 0; /* Remove todas as bordas arredondadas para aproveitar mais a tela */
+        border-radius: 0; 
         margin-right: 0;
         margin-left: 0;
     }
     .conteudoFeed {
-        padding: 10px; /* Menor padding no feed */
+        padding: 10px; 
     }
 
     .cabecalhoPrincipal {
         padding: 10px;
     }
 
-    #logoImagem { /* Ajustei o seletor para o ID */
+    #logoImagem { 
         width: 30px;
         height: 30px;
     }
@@ -391,15 +388,15 @@ body {
         margin-top: 10px;
     }
     .acoesNovaPostagem .botaoIcone, .acoesNovaPostagem .botaoPublicar {
-        width: 100%; /* Botões ocupam largura total */
-        justify-content: center; /* Centraliza conteúdo do botão de ícone */
+        width: 100%; 
+        justify-content: center; 
     }
 
     .areaPesquisa {
-        max-width: none; /* Permite ocupar 100% se necessário */
+        max-width: none; 
     }
     .areaPesquisa input[type="search"] {
-        width: calc(100% - 30px); /* Reajusta */
+        width: calc(100% - 30px); 
     }
 
     .postagemItem {
